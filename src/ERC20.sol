@@ -130,4 +130,8 @@ contract ERC20 is IERC20{
     function pause() public onlyOwner{
         paused = true;
     }
+
+    function resume() public onlyOwner{
+        paused = false;
+    }
 }
